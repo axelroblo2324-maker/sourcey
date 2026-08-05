@@ -45,10 +45,10 @@
     },
     {
       "kind": "live_artifact",
-      "public_url": "https://raw.githubusercontent.com/axelroblo2324-maker/sourcey/fc2c4d906a8e85951cd6e0a7add21e5da2ec2b0f/docs/llms.txt",
+      "public_url": "https://raw.githubusercontent.com/sourcey/sourcey/refs/pull/261/head/docs/llms.txt",
       "content_type": "text/plain",
       "stranger_fetchable": true,
-      "credibility": "Raw GitHub content at the immutable PR-head commit for the maintained upstream project."
+      "credibility": "Raw GitHub content from the maintained project's canonical upstream pull-request head ref; it is the exact file proposed by sourcey/sourcey#261 and is stranger-fetchable."
     },
     {
       "kind": "upstream_adoption",
