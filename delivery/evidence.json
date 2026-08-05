@@ -1,6 +1,7 @@
 {
   "summary": "Reproducible Sourcey 3.6.5 generation of llms.txt from the maintained sourcey/sourcey repository at a pinned commit, followed by a public upstream pull request adding the generated artifact.",
-  "runx_cli_version": "runx-cli 0.6.14",
+  "runx_cli_version": "runx-cli 0.8.2",
+  "receipt_ref": "runx:receipt:sha256:ca1f8bc8fdc457c4033e9509c245aa76463038abf9a13487056cdce02d1d13cb",
   "observations": [
     {
       "kind": "source_repo",
@@ -25,6 +26,15 @@
       "method": "The official Sourcey CLI read the pinned Markdown/config inputs and emitted llms.txt and llms-full.txt alongside the static HTML site; the file was not hand-written.",
       "llms_sha256": "sha256:fb903241d7ff29b4854bdb2a24780c5ddec4bb9fc36717145426a792e100b421",
       "llms_full_sha256": "sha256:904d4d38275a16d2d386199b0c115be53bcac3289b5862be5b7b91fc1bdbbb36"
+    },
+    {
+      "kind": "governed_validation",
+      "runx_version_output": "runx-cli 0.8.2",
+      "command": "runx-cli 0.8.2 skill work/runx-sourcey-validation -R <receipt-dir> --json",
+      "run_id": "run_validate_6069036bf9e7737e",
+      "receipt_ref": "runx:receipt:sha256:ca1f8bc8fdc457c4033e9509c245aa76463038abf9a13487056cdce02d1d13cb",
+      "verify_verdict": "valid=true; digest valid; content_address valid; signature valid; findings=[]",
+      "result": "The validation runner rebuilt Sourcey output from the pinned project inputs and matched llms.txt sha256:fb903241d7ff29b4854bdb2a24780c5ddec4bb9fc36717145426a792e100b421."
     },
     {
       "kind": "build_output",
