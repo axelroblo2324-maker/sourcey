@@ -1,0 +1,10 @@
+# Sourcey llms.txt delivery report
+
+- Built the documentation site with the official Sourcey CLI 3.6.5 from the pinned `sourcey/sourcey` commit `7b84dc2b672f97b286be5eab8d4f9f095b9c4d76`.
+- Reused the project's committed `docs/sourcey.config.ts` and five real Markdown pages; no generated HTML or indexes were written into the authored source tree.
+- The build emitted `llms.txt`, `llms-full.txt`, five HTML documentation pages, a search index, a sitemap, CSS, and JavaScript.
+- The generated `llms.txt` is published at the immutable PR-head URL in `public_url` and is fetchable as plain text by a stranger.
+- The upstream pull request [sourcey/sourcey#261](https://github.com/sourcey/sourcey/pull/261) adds `docs/llms.txt` to the project's own repository with a maintainer-facing rationale; it is open and mergeable by the project maintainers.
+- Five entries were audited against the pinned repository: Introduction, Install, Configuration, Roadmap, and Changelog each resolve to a real source page.
+- The generated file is content-addressed in `evidence.json` so a reviewer can compare the live artifact with the recorded build output.
+- A governed runx 0.6.14 signing run sealed the external-work evidence used as `receipt_ref`.
