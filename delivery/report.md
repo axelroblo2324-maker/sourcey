@@ -7,4 +7,4 @@
 - The upstream pull request [sourcey/sourcey#261](https://github.com/sourcey/sourcey/pull/261) adds `docs/llms.txt` to the project's own repository with a maintainer-facing rationale; it is open and mergeable by the project maintainers.
 - Five entries were audited against the pinned repository: Introduction, Install, Configuration, Roadmap, and Changelog each resolve to a real source page.
 - The generated file is content-addressed in `evidence.json` so a reviewer can compare the live artifact with the recorded build output.
-- A governed runx 0.6.14 signing run sealed the external-work evidence used as `receipt_ref`.
+- A governed runx 0.8.2 signing run sealed the validation run. The receipt is `runx:receipt:sha256:ca1f8bc8fdc457c4033e9509c245aa76463038abf9a13487056cdce02d1d13cb`; `runx verify` returned `valid=true`, with valid digest, content address, and signature and no findings.
